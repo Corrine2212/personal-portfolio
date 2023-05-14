@@ -1,4 +1,4 @@
-.about-container {
+.projects-container {
     text-align: center;
     padding: 0;
     /* margin-bottom: 10px; */
@@ -12,16 +12,12 @@
     width: calc(100% - 15rem);
 }
 
-.about-title {
+.projects-title {
     font-size: var(--subtitle-font-size);
     margin: var(--subtitle-margin);
 }
 
-.about-container p {
+.projects-container p {
     line-height: 32px;
     font-size: 18px;
 }
-/* .about-para {
-    padding-left: 20%;
-    padding-right: 20%;
-} */

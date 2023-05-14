@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.contact-title {
+    font-size: var(--subtitle-font-size);
+    margin: var(--subtitle-margin);
+}
 .contact-icons {
     display: flex;
     justify-content: space-around;
@@ -24,7 +28,12 @@
 }
 
 .contact-container h1 {
-    font-size: 40px;
+    font-size: var(--subtitle-font-size);
+    margin: var(--subtitle-margin); 
+}
+
+.contact-container p {
+    font-size: var(--p-font-size);
 }
 
 .linkedin {

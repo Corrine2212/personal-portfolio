@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <>
             <div className="contact-container">
-                <h1>Contact Me</h1>
+                <h2 className="contact-title">Contact Me</h2>
                 <p>
                     If you’d like to get in touch, please don’t hesitate to contact me
                     through the options below:

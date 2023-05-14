@@ -27,7 +27,7 @@ const NavBar = () => {
     return (
         <div id="navbar-wrapper" className={isSticky ? 'sticky' : ''}>
             <div className='logo-wrapper'>
-                <p>logo</p>
+                <p className='logo'>CS.</p>
             </div>
             <div className='nav'>
                 <p className='nav-items'>About</p>

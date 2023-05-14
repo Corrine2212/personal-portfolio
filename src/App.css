@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500&display=swap');
 
 :root {
-  --font-family:'Reem Kufi', sans-serif;
+  --font-family: 'Reem Kufi', sans-serif;
   --font-color: #FF4500;
+  --p-font-size: 18px;
+  --p-line-height: 32px;
+  --subtitle-font-size: 55px;
+  --subtitle-margin: 0;
+
 }
 
 .App {
@@ -42,12 +47,28 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: var(--font-family);
   color: var(--font-color);
+}
+
+h3 {
+  font-size: 30px;
+  margin: 5px 0px 5px 0px;
+}
+
+h4 { 
+  font-size: 20px;
+  margin: 5px 0px 5px 0px;
+}
+
+
+.footer-text {
+  color: gray;
 }

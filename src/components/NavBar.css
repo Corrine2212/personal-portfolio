@@ -16,19 +16,28 @@
     justify-content: space-evenly;
     padding-top: 0;
     padding-bottom: 0;
-    padding: 1.5rem 1rem;
+    padding: 1rem 2rem;
+}
 
+.logo {
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: 800;
+    color: orangered;
 }
 
 .nav {
     display: flex;
     justify-content: space-evenly;
+    padding: 0rem 1rem;
     /* margin-right: 20px; */
 }
 
 .nav-items {
     display: block;
     padding: 1.5rem 1rem;
+    font-family: var(--font-family);
+    font-size: var(--p-font-size);
 }
 
 .sticky {
