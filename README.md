@@ -1,3 +1,9 @@
+# My Portfolio - Corrine Sing
+
+First ever portfolio built using React and Javascript.
+
+Parallax background credit: [Dinesh Pandiyan]('https://codepen.io/flexdinesh/pen/GxNazP')
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
