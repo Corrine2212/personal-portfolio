@@ -4,5 +4,12 @@
     min-height: calc(100vh - 99px);
     z-index: 0;
     position: relative;
+}
 
+#about {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 99px);
+    z-index: 0;
+    position: relative;
 }
