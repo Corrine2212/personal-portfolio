@@ -9,6 +9,21 @@
     justify-content: center;
     flex-flow: column nowrap;
     align-items: center;
+    top: 0px;
+    z-index: 0;
+}
+
+.intro-name {
+    font-size: 75px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.tagline {
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 10px;
+    
 }
 
 .intro-icons {

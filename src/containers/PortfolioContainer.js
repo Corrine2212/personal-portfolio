@@ -4,7 +4,7 @@ import About from '../components/About';
 import ProjectsList from '../components/ProjectsList';
 import Contact from '../components/Contact';
 import ParallaxBackground from '../components/ParallaxBackground';
-
+import './PortfolioContainer.css'
 
 
 const PortfolioContainer = () => {
@@ -12,19 +12,19 @@ const PortfolioContainer = () => {
         <>
             <ParallaxBackground />
 
-            <section id='WelcomeLanding'>
+            <section id='welcomelanding'>
                 <WelcomeLanding />
             </section>
 
-            <section id='About'>
+            <section id='about'>
                 <About />
             </section>
 
-            <section id='Projects'>
+            <section id='projects'>
                 <ProjectsList />
             </section>
 
-            <section id='Contact'>
+            <section id='contact'>
                 <Contact />
             </section>
             

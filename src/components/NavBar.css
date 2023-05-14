@@ -1,15 +1,14 @@
 #navbar-wrapper {
-    background-color: rgba(255, 255, 255, 0.5);    padding-left: 40px;
-    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
     margin-left: auto;
     margin-right: auto;
-    position:sticky;
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    /* box-shadow: ; */
-
+    width: 100%;
+    z-index: 2;
 }
 
 .logo-wrapper {
@@ -17,11 +16,14 @@
     justify-content: space-evenly;
     padding-top: 0;
     padding-bottom: 0;
+    padding: 1.5rem 1rem;
+
 }
 
 .nav {
     display: flex;
     justify-content: space-evenly;
+    /* margin-right: 20px; */
 }
 
 .nav-items {
@@ -32,5 +34,23 @@
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 95%;
 }
+
+
+/* Media query for smaller screens */
+/* @media screen and (max-width: 768px) {
+    #navbar-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        padding: 1rem 0;
+    }
+} */
