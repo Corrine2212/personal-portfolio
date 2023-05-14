@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500&display=swap');
+
+:root {
+  --font-family:'Reem Kufi', sans-serif;
+  --font-color: #FF4500;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  font-family: var(--font-family);
+  color: var(--font-color);
 }

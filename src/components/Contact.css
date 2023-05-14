@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+.contact-container {
+    text-align: center;
+    /* height: 100vh; */
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    width: 30px;
+}
+
+.contact-icons svg {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.contact-container h1 {
+    font-size: 40px;
+}
+
+.linkedin {
+    color: black;
+}
+
+.linkedin:hover {
+    color: #0A66C2;
+}
+
+.github {
+    color: black;
+}
+
+.github:hover {
+    color: #640CB6;
+}
