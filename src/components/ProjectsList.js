@@ -1,4 +1,5 @@
 import React from 'react';
+import Project from './Project'
 import './ProjectsList.css'
 
 const ProjectsList = () => {
@@ -6,7 +7,7 @@ const ProjectsList = () => {
         <>
             <div className="projects-container">
                 <h2 className='projects-title'>Projects</h2>
-                <p>Individual project</p>
+                <Project />
             </div>
         </>
     );
