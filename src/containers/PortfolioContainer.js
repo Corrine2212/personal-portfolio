@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import WelcomeLanding from '../components/WelcomeLanding';
 import About from '../components/About';
 import ProjectsList from '../components/ProjectsList';
@@ -9,30 +9,54 @@ import './PortfolioContainer.css'
 
 
 const PortfolioContainer = () => {
+
+    const [visibleTags, setVisibleTags] = useState([]);
+
+    useEffect(() => {
+        function handleScroll() {
+            const pageTop = window.pageYOffset;
+            const pageBottom = pageTop + window.innerHeight;
+            const tags = document.querySelectorAll(".tag");
+
+            const visible = [];
+            tags.forEach((tag) => {
+                if (tag.offsetTop < pageBottom) {
+                    visible.push(tag);
+                }
+            });
+
+            setVisibleTags(visible);
+        }
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <>
             <ParallaxBackground />
 
-            <section id='welcomelanding'>
+            <section className={`welcomelanding`}>
                 <WelcomeLanding />
             </section>
 
-            <section id='about'>
+            <section className={`tag about ${visibleTags.includes(document.querySelector(".about")) ? "visible" : ""}`}>
                 <About />
             </section>
 
-            <section id='projects'>
+            <section className={`tag projects ${visibleTags.includes(document.querySelector(".projects")) ? "visible" : ""}`}>
                 <ProjectsList />
             </section>
 
-            <section id='cv'>
+            <section className={`tag cv ${visibleTags.includes(document.querySelector(".cv")) ? "visible" : ""}`}>
                 <Cv />
             </section>
 
-            <section id='contact'>
+            <section className={`tag contact ${visibleTags.includes(document.querySelector(".contact")) ? "visible" : ""}`}>
                 <Contact />
             </section>
-            
+
+
         </>
     )
 }

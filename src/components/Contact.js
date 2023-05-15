@@ -1,9 +1,12 @@
 import React from "react";
 import "./Contact.css";
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+library.add(faEnvelope);
 
 const Contact = () => {
     return (
@@ -28,6 +31,13 @@ const Contact = () => {
                         rel="noreferrer"
                     >
                         <FontAwesomeIcon icon={faGithub} className="github" />
+                    </a>
+                    <a
+                        href="mailto:corrine.sing@gmail.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <FontAwesomeIcon icon={faEnvelope} className="envelope" />
                     </a>
                 </div>
             </div>

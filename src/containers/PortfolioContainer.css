@@ -1,4 +1,18 @@
-#welcomelanding {
+.welcomelanding {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 99px);
+    z-index: 0;
+    position: relative;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.about {
     display: flex;
     justify-content: center;
     min-height: calc(100vh - 99px);
@@ -6,7 +20,7 @@
     position: relative;
 }
 
-#about {
+.projects {
     display: flex;
     justify-content: center;
     min-height: calc(100vh - 99px);
@@ -14,7 +28,7 @@
     position: relative;
 }
 
-#projects {
+.cv {
     display: flex;
     justify-content: center;
     min-height: calc(100vh - 99px);
@@ -22,10 +36,21 @@
     position: relative;
 }
 
-#contact {
+.contact {
     display: flex;
     justify-content: center;
     min-height: calc(100vh - 99px);
     z-index: 0;
     position: relative;
 }
+
+.tag {
+    opacity: 0;
+    /* transform: translate(0, 10vh); */
+    transition: all 5s;
+}
+
+.tag.visible {
+    opacity: 1;
+    /* transform: translate(0, 0); */
+  }

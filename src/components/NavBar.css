@@ -35,10 +35,54 @@
 
 .nav-items {
     display: block;
-    padding: 1.5rem 1rem;
+    padding: 0rem 1rem;
+    margin-bottom: 3px;
     font-family: var(--font-family);
     font-size: var(--p-font-size);
+    position: relative;
 }
+
+a {
+    position: relative;
+    margin: 0px;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: orangered;
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover:after {
+  width: 83%;
+  transform: scaleX(1);
+  margin-top: 0;
+}
+
+/* a {
+    text-decoration: underline;
+
+}
+
+a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #57aee5;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s !important;
+}
+
+a:hover::after {
+    width: 100%;
+} */
 
 .sticky {
     position: fixed;

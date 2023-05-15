@@ -51,3 +51,11 @@
 .github:hover {
     color: #640CB6;
 }
+
+.envelope {
+    color: black;
+}
+
+.envelope:hover {
+    color: #00AEAE;
+}
