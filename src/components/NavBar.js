@@ -30,10 +30,10 @@ const NavBar = () => {
                 <p className='logo'>CS.</p>
             </div>
             <div className='nav'>
-                <a href='/'><p className='nav-items'>About</p></a>
-                <a href='/'><p className='nav-items'>Projects</p></a>
-                <a href='/'><p className='nav-items'>CV</p></a>
-                <a href='/'><p className='nav-items'>Contact</p></a>
+                <a href='/' className='navbar-link'><p className='nav-items'>About</p></a>
+                <a href='/' className='navbar-link'><p className='nav-items'>Projects</p></a>
+                <a href='/' className='navbar-link'><p className='nav-items'>CV</p></a>
+                <a href='/' className='navbar-link'><p className='nav-items'>Contact</p></a>
             </div>
         </div>
     )

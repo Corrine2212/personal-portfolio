@@ -42,12 +42,12 @@
     position: relative;
 }
 
-a {
+.navbar-link {
     position: relative;
     margin: 0px;
 }
 
-a:after {
+.navbar-link:after {
     content: "";
     position: absolute;
     left: 7px;
@@ -58,7 +58,7 @@ a:after {
     transition: width 0.3s ease-in-out;
 }
 
-a:hover:after {
+.navbar-link:hover:after {
   width: 83%;
   transform: scaleX(1);
   margin-top: 0;

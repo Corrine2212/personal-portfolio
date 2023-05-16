@@ -5,6 +5,7 @@ import ProjectsList from '../components/ProjectsList';
 import Cv from '../components/Cv';
 import Contact from '../components/Contact';
 import ParallaxBackground from '../components/ParallaxBackground';
+
 import './PortfolioContainer.css'
 
 
