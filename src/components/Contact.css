@@ -59,3 +59,10 @@
 .envelope:hover {
     color: #00AEAE;
 }
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 800px) {
+    .contact-container {
+        padding: 50px; /* Adjust the padding value as per your preference */
+    }
+}

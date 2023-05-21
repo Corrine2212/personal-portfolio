@@ -14,15 +14,15 @@
 }
 
 .intro-name {
-    font-size: 75px;
+    font-size: 5rem;
     margin-bottom: 5px;
     margin-top: 0px;
 }
 
 .tagline {
     font-weight: lighter;
-    font-size: 30px;
-    margin-top: 10px;
+    font-size: 2vw;
+    margin-top: 0px;
     
 }
 
@@ -36,4 +36,14 @@
 .intro-icons svg {
     font-size: 40px;
     margin: 10px;
+}
+
+/* Responsive styles for tablet screens and above */
+@media screen and (max-width: 768px) {
+    .intro-name {
+        font-size: 10vw; 
+    }
+    .tagline {
+        font-size: 4vw;
+    }
 }
